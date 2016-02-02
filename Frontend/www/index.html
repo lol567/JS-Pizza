@@ -16,9 +16,43 @@
 
 </head>
 <body>
+<div class="main_part">
+    <div class="navbar navbar-fixed-top top-panel">
+<header>
 
-<div class="container">
+    <ul class="top">
+        <li class="top_info"  id="logo">PIZZA KMA</li>
+        <li class="top_info">(044) 222 5 222</li>
+        <li class="top_info"></li> 24 години/7 днів на тиждень</li>
+        <li class="top_info">Безкоштовна доставка піци</li>
+        <button type="button" class="btn btn-default" id="top_right_button">Middle</button>
+        <li class="top_info"><input type="button" name="name" value="Ввыйти"></li>
+        </ul>
+        <hr id="line_header">
+        <p id="pizza">Піца</p>
+    </ul>
+
+<div class="menu">
+    <h3 id="all_pizzas">Усі піци</h3>
+    <input type="checkbox" name="checkbox" id="all">
+    <label for="all">Усі</label>
+    <input type="checkbox" class="checkbox" id="meat">
+    <label for="meat">Мясні</label>
+    <input type="checkbox" class="checkbox" id="pineapple">
+    <label for="pineapple">З ананасами</label>
+    <input type="checkbox" class="checkbox" id="mushrooms">
+    <label for="mushrooms">З грибами</label>
+    <input type="checkbox" class="checkbox" id="sea">
+    <label for="sea">З морепродуктамі</label>
+    <input type="checkbox" class="checkbox" id="vega">
+    <label for="vega">Вега</label>
+</div>
+</header>
+</div>
+    </div>
+<div class="main-container container-fluid">
     <div class="row">
+        <div class="col-xs-6 col-sm-8 col-md-8 col-lg-9 left-panel">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_1.jpg">
@@ -66,8 +100,72 @@
                 </div>
             </div>
         </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail pizza-card">
+                    <img src="assets/images/pizza_4.jpg">
+
+                    <div class="caption"><h3>Thumbnail label</h3>
+
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                        <p>
+                            <a href="#" class="btn btn-primary">Button 7</a>
+                            <a href="#" class="btn btn-default">Button 8</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail pizza-card">
+                    <img src="assets/images/pizza_5.jpg">
+
+                    <div class="caption"><h3>Thumbnail label</h3>
+
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                        <p>
+                            <a href="#" class="btn btn-primary">Button 9</a>
+                            <a href="#" class="btn btn-default">Button 10</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+<div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 right-panel">
+    <div class="right_col_title">
+        <p id="order">Замовлення</p>
+        <p id="clean_order">Очистити замовлення</p>
+    </div>
+    <div class="right_col_ord" id="first_order">
+
+    </div>
+    <div class="right_col_ord" id="second_order">
+
+    </div>
+    <div class="right_col_ord" id="third_order">
+
+    </div>
+    <div class="right_col_sum">
+        <div class="right_col_sum_title">
+            <p>Сума замовлення</p>
+            <p>924 грн.</p>
+        </div>
+        <input type="button" name="name" value="Замовити">
     </div>
 </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>ЦЬОГО ТИЖНЯ НА ВСE -20%</p>
+</footer>
 
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>

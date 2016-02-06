@@ -1,15 +1,16 @@
-@mainColor: #fffa3f;
+@mainColor: #ea862e;
+@top-text-color: rgba(146, 147, 161, 0.62);
 
 @import "pizza/pizza-card";
-.right-panel{
-  position: fixed!important;
+.right-panel {
+  position: fixed !important;
   top: 0;
   right: 0;
   bottom: 0;
-  padding-top:35px;
+  padding-top: 35px;
   margin-left: 20px;
-  padding-left: 0px!important;
-  padding-right: 0px!important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 
   min-width: 260px;
   height: 100%;
@@ -18,47 +19,179 @@
   -3px 3px 10px;
 
   z-index: 1000;
-  .right_col_title{
+  .right_col_title {
     font-size: 20px;
     font-weight: bold;
     padding-left: 15px;
   }
 
 }
-.footer	{
-
-  position:	fixed;
-  bottom:	0px;
-  left:	0px;
-  height:	50px;
-  background-color: #655dff;
-
-  width:	100%;
-
-}
-.top-panel{
-  display: inline-block; float: left;
-  z-index: 100;
-  position:	fixed;
-  top:	0px;
-  left:	0px;
-  height:	100px;
-  background-color: #655dff;
-  width:	100%;
-}
-.container-fluid{
-  margin-top: 105px;
-}
-.top_info{
+.top_info {
   display: inline-block;
 }
 
-#pizza{
-  padding-left: 100px;
+.discount-before {
+  width: 100px;
+  height: 11px;
+  top: -11px;
+  left: -1px;
+  background-image: url(../images/discount.svg);
+  background-size: 100px 11px;
+  background-repeat: no-repeat;
+  padding: 0!important;
+  margin: 0!important;
+  position: absolute;
 }
-.header{
 
-}
-#all_pizzas{
+#logo{
+  position: relative;
+  left: 0px;
+  position: fixed;
+  top: 0;
+  background: #ea862e;
+  z-index: 99;
+  width: 99px;
+  height: 90px;
+  font-size: 19px;
+  padding: 10px;
+  padding-top: 15px;
+  color: #fff;
   text-align: center;
 }
+.top{
+  display: inline-block!important;
+  position: relative;
+  left: 80px; top: 15px;
+  color:  @top-text-color;
+}
+#pizza{
+  position: relative;
+  left: 120px; bottom: 13px;
+  color:  @top-text-color;
+
+}
+#telephone_number{
+  font-size: 20px;
+}
+#time{
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.row{
+  padding-top: 50px;
+}
+.top-panel .top-discount {
+  top: 90px;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+.discount-before {
+  width: 100px;
+  height: 11px;
+  top: -11px;
+  left: -1px;
+  background-image: url(../images/discount.svg);
+  background-size: 100px 11px;
+  background-repeat: no-repeat;
+  padding: 0!important;
+  margin: 0!important;
+  position: absolute;
+}
+.top-panel {
+  background: rgba(0,0,0,.8);
+  z-index: 10;
+  display: inline-block;
+  float: left;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height:90px;
+  width: 100%;
+}
+.menu{
+  text-align: center;
+}
+
+
+.container-fluid {
+  margin-top: 105px;
+}
+#chose_pizza{
+  text-align: center;
+}
+.all-orders{
+  margin-top: 15px;
+  background-color: #F5F5F5;
+  height: 100%;
+}
+
+
+#all_pizzas {
+  text-align: center;
+}
+.footer {
+
+  position: fixed;
+  bottom: 0;
+  background: @mainColor;
+  z-index: 99;
+  width: 99px;
+  padding: 10px;
+  color: #fff;
+
+}
+
+
+ .order-list-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17px;
+  padding-left: 15px;
+}
+.r1{
+  height: 40px;
+}
+#clear{
+
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 17px;
+  position: absolute;
+  right:20px;
+  color: @top-text-color;
+}
+.r2 {
+
+  text-align: center;
+
+background-color: rgba(161, 161, 161, 0.25);
+  height: 75%;
+}
+
+ .no-order-text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.42);
+  text-align: center;
+  margin-top: 0px;
+   padding-top: 20px;
+}
+.right-panel .order-state {
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.do-order-button {
+
+  margin: 10px;
+}
+#chose_pizza{
+  text-align: center;
+}
+
+

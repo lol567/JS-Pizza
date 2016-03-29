@@ -1,0 +1,114 @@
+@pizza-size: 90px;
+@btn-size: 30px;
+
+#order {
+  border: 1px solid #ddd;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  min-width: 320px;
+  width: 320px;
+  height: 100%;
+  background-color: white;
+  padding-top: 20px;
+}
+
+.order-header {
+  padding: 7px;
+  .order-title-header {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .btn-link {
+    color: grey;
+    font-size: 15px;
+  }
+}
+
+.to-buy {
+  position: relative;
+  bottom: 0px;
+  right: 5px;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#basket {
+  background-color: rgb(247, 251, 223);
+  height: 75%;
+}
+
+.empty-cart {
+  padding-top: 40%;
+  text-align: center;
+  font-family: @text-desidn;
+}
+
+.order-item {
+  padding-left: 20px;
+  padding-top: 10px;
+  height: 110px;
+
+  border: 1px solid #ddd;
+  padding-bottom: 0px;
+  .order-item-name {
+    color: @menuColor;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .img-pizza-in-basket {
+    height: @pizza-size;
+    width: @pizza-size;
+    margin-right: (@pizza-size /20);
+
+    float: right;
+    border-radius: 100%;
+  }
+  .item-cost {
+    font-weight: bold;
+    color: #a31e3d;
+  }
+  .btn {
+    border-radius: 100%;
+    width: @btn-size;
+    height: @btn-size;
+    text-align: center;
+    padding: 0px 3px 0px 3px;
+  }
+  .btn-default {
+    color: @mainColor;
+    float: right;
+
+  }
+
+}
+
+.bottom-order {
+  background-color: inherit;
+  z-index: 18;
+  .order-cost {
+    color: #5f5f5f;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+#order {
+  background-color: rgb(244, 209, 190);
+}
+//buttons
+.minus {
+  background-color: #a3212c;
+}
+
+.plus {
+  background-color: #5E740B;
+}
+
+.remove {
+  background-color: #e49935;
+}

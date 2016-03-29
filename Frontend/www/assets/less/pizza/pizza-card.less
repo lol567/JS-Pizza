@@ -1,11 +1,37 @@
 .pizza-card {
-  img {
-    max-width: 250px;
+  .pizza-icon {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 100%;
   }
 
   h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+    color: #8c1830;
+  }
+
+  .description {
+    height: 40px;
+    overflow-y: hidden;
+  }
+
+  .type{
+    color: grey;
+    text-align: left;
+  }
+  .label {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    font-size: 20px;
+  }
+  .costs{
+    margin-bottom: 0px;
+  }
+  .buy-sm {
+    background-color: @itemsColor;
+  }
+  .buy-lg{
+    background-color: @itemsColor;
   }
 
 }
